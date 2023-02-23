@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Bebas Neue, sans-serif;
+	color: whitesmoke;
+	background: #2b2a33;
+}
+
+/* title */
+
+h1 {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 40px;
+	letter-spacing: 5px;
+	/* transition: 150ms; */
+}
+
+/* Loader */
+.loader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.8);
+}
+.loader img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Image Contianer */
+.image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.image-container img {
+	width: 1152px;
+	margin: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+	transition: 150ms;
+}
+
+.image-container img:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.527);
+}
+
+
+@media screen and (max-width: 1920px) {
+	.image-container img {
+		width: 600px;
+		margin: 10px;
+	}
+}
+@media screen and (max-width: 620px) {
+	.image-container img {
+		width: 95%;
+		margin-bottom: 3%;
+		margin-top: 0%;
+	}
+}
+@media screen and (max-width: 500px) {
+	h1 {
+		margin-top: 4.5vw;
+		margin-bottom: 1.5vw;
+		font-size: 8vw;
+		letter-spacing: 1vw;
+	}
+}

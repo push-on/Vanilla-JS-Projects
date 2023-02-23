@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui;
+    background: #000;
+    color: rgb(238, 233, 217);
+    display: flex;
+    justify-content: center;
+    
+}

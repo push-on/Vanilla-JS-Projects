@@ -1,0 +1,39 @@
+body {
+	background: #000;
+	color: rgb(238, 233, 217);
+	font-family: system-ui;
+}
+
+input[type='text'] {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	border: 2px solid #6a649b;
+	border-radius: 10px;
+	height: 1rem;
+	padding: .6rem 1.0rem .7rem;
+}
+
+input[type='text']:focus {
+	border-color: #a8c6ff;
+	outline: 0;
+}
+
+button {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	border: 2px solid #6a649b;
+	border-radius: 10px;
+	padding: .6rem 1.0rem .7rem;
+	cursor: pointer;
+	outline: none;
+	transition: 100ms;
+}
+
+button {
+	border-radius: 10px;
+}
+
+button:focus {
+	border-color: #a8c6ff;
+	transform: scale(.96);
+}

@@ -1,0 +1,102 @@
+:root {
+    --line-border-fill: #ffdc4e;
+    --line-border-empty: #242424;
+    --line-bg-fill: #3c3c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    background: black;
+    color: rgb(238, 233, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before {
+    content: '';
+    background-color: var(--line-bg-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+
+.circle {
+    background-color: var(--line-border-empty);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--line-bg-fill);
+    transition: 0.3s ease;
+}
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.btn {
+    border: 2px solid var(--line-border-empty);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+}
+.btn:hover {
+    border-color: var(--line-border-fill);
+}
+.btn:active {
+    background-color: var(--line-border-empty);
+    filter: brightness(1.3);
+    transform: translateY(2px);
+}
+.btn:disabled {
+    color: var(--line-border-empty);
+    background-color: black;
+    border: 2px solid var(--line-border-empty);
+    cursor: not-allowed;
+}
+.btn:disabled:hover {
+    transform: none;
+    filter: none;
+}
+

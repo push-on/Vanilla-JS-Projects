@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<div class="split-screen">
+			<!-- Left -->
+			<div class="left">
+				<section class="copy">
+					<h1>Pushon's Newsletter</h1>
+					<p>
+						See my creativity &
+						<br />
+						get to see all my artwork
+						<br />
+						as soon as
+						<br />
+						they are finished.
+					</p>
+				</section>
+			</div>
+			<!-- Right -->
+			<div class="right">
+				<form>
+					<!-- Sign up text -->
+					<section class="copy">
+						<h2>Sign Up</h2>
+						<div class="login-container">
+							<p>
+								Already have an account?
+								<a href="#"><strong>Log in</strong></a>
+							</p>
+						</div>
+					</section>
+					<!-- Name Box -->
+					<div class="input-container name">
+						<label for="fname">Full Name</label>
+						<input id="fname" name="fname" type="text" />
+					</div>
+					<!-- Mail Box -->
+					<div class="input-container email">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="text" />
+					</div>
+					<!-- Password Box -->
+					<div class="input-container password">
+						<label for="password">Password</label>
+						<input
+							id="password"
+							name="password"
+							placeholder="Must be at least 6 characters"
+							type="password"
+						/>
+						<i class="far fa-eye-slash"></i>
+					</div>
+					<!-- Newsletter checkbox -->
+					<div class="input-container cta">
+						<label class="checkbox-container">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Sign up for email updates.
+						</label>
+					</div>
+					<!-- Submit Button -->
+					<button class="signup-btn" type="submit">Sign Up</button>
+					<!-- other text & links -->
+					<section class="copy legal">
+						<p>
+							<span class="small"
+								>By continuing, you agree to accept our <br />
+								<a href="#">Privacy Policy</a> &amp;
+								<a href="#">Terms of service</a>.
+							</span>
+						</p>
+					</section>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
